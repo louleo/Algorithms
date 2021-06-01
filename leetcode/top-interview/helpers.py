@@ -1,9 +1,10 @@
 from typing import List
 
 
-def compareList(list1: List[int], list2: List[int]) -> bool:
-    list1.sort()
-    list2.sort()
+def compareList(list1: List[int], list2: List[int], sort = False) -> bool:
+    if sort:
+        list1.sort()
+        list2.sort()
     if len(list1) != len(list2):
         print(list1)
         print(list2)

@@ -1,4 +1,4 @@
-from S001TwoSum import Run
+from S002AddTwoNumbers import run
 
 
-Run()
+run()
