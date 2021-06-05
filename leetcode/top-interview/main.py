@@ -1,4 +1,4 @@
-from S002AddTwoNumbers import run
+from S004Median import runTests
 
 
-run()
+runTests()

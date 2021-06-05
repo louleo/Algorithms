@@ -61,7 +61,7 @@ class Solution:
 
         return newNode
 
-    def addTwoNumbers2(self, l1: ListNode, l2: ListNode) -> ListNode:
+    def addTwoNumbers2S(self, l1: ListNode, l2: ListNode) -> ListNode:
         result = ListNode(0)
         result_tail = result
         carry = 0
@@ -97,7 +97,7 @@ def formatToList(node: ListNode) -> List[int]:
     return list
 
 
-def run():
+def runTests():
     solution = Solution()
 
     input1_l1 = [2,4,3]

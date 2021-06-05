@@ -30,7 +30,7 @@ class Solution:
         return []
 
 
-def run():
+def runTests():
     testObj = Solution()
 
     nums1 = [2, 7, 11, 15]
