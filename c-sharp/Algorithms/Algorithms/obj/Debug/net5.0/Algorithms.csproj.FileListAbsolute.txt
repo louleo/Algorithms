@@ -1,0 +1,12 @@
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\bin\Debug\net5.0\Algorithms.deps.json
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\bin\Debug\net5.0\Algorithms.dll
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\bin\Debug\net5.0\ref\Algorithms.dll
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\bin\Debug\net5.0\Algorithms.pdb
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\obj\Debug\net5.0\Algorithms.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\obj\Debug\net5.0\Algorithms.AssemblyInfoInputs.cache
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\obj\Debug\net5.0\Algorithms.AssemblyInfo.cs
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\obj\Debug\net5.0\Algorithms.csproj.CoreCompileInputs.cache
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\obj\Debug\net5.0\Algorithms.dll
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\obj\Debug\net5.0\ref\Algorithms.dll
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\obj\Debug\net5.0\Algorithms.pdb
+D:\dev\Algorithms\c-sharp\Algorithms\Algorithms\obj\Debug\net5.0\Algorithms.csproj.AssemblyReference.cache
