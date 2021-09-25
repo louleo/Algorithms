@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\Algorithms\\c-sharp\\Algorithms\\DataStructure\\DataStructure.csproj": {}
+    "/home/leo/coding/Algorithms/c-sharp/Algorithms/DataStructure/DataStructure.csproj": {}
   },
   "projects": {
-    "D:\\dev\\Algorithms\\c-sharp\\Algorithms\\DataStructure\\DataStructure.csproj": {
+    "/home/leo/coding/Algorithms/c-sharp/Algorithms/DataStructure/DataStructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\Algorithms\\c-sharp\\Algorithms\\DataStructure\\DataStructure.csproj",
+        "projectUniqueName": "/home/leo/coding/Algorithms/c-sharp/Algorithms/DataStructure/DataStructure.csproj",
         "projectName": "DataStructure",
-        "projectPath": "D:\\dev\\Algorithms\\c-sharp\\Algorithms\\DataStructure\\DataStructure.csproj",
-        "packagesPath": "C:\\Users\\Graceo\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\Algorithms\\c-sharp\\Algorithms\\DataStructure\\obj\\",
+        "projectPath": "/home/leo/coding/Algorithms/c-sharp/Algorithms/DataStructure/DataStructure.csproj",
+        "packagesPath": "/home/leo/.nuget/packages/",
+        "outputPath": "/home/leo/coding/Algorithms/c-sharp/Algorithms/DataStructure/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Graceo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/leo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/leo/.dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

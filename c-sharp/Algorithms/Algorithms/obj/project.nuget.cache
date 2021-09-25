@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WPyfrV2pdUi4rSlOpkQhxWwaKUzZWvHWOECoCuzXltqXBjXKIhV+Qu2UaXTVpdLF4tqEwkSxrAxGe6AY7787vw==",
+  "dgSpecHash": "1EwwGeSpPW5H0F9oq5GrnOgrZSYrdFAG1V5rhrepKfSWAyJjlr2Eyn3cIaNrlrDh+voCsV0aOqWkzABWNl3cZA==",
   "success": true,
-  "projectFilePath": "D:\\dev\\Algorithms\\c-sharp\\Algorithms\\Algorithms\\Algorithms.csproj",
+  "projectFilePath": "/home/leo/coding/Algorithms/c-sharp/Algorithms/Algorithms/Algorithms.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
