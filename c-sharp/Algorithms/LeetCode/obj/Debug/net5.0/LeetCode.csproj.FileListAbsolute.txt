@@ -1,0 +1,12 @@
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/bin/Debug/net5.0/LeetCode.deps.json
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/bin/Debug/net5.0/LeetCode.dll
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/bin/Debug/net5.0/ref/LeetCode.dll
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/bin/Debug/net5.0/LeetCode.pdb
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/Debug/net5.0/LeetCode.csproj.AssemblyReference.cache
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/Debug/net5.0/LeetCode.GeneratedMSBuildEditorConfig.editorconfig
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/Debug/net5.0/LeetCode.AssemblyInfoInputs.cache
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/Debug/net5.0/LeetCode.AssemblyInfo.cs
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/Debug/net5.0/LeetCode.csproj.CoreCompileInputs.cache
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/Debug/net5.0/LeetCode.dll
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/Debug/net5.0/ref/LeetCode.dll
+/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/Debug/net5.0/LeetCode.pdb

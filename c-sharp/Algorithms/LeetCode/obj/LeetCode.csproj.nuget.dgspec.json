@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/LeetCode.csproj": {}
+  },
+  "projects": {
+    "/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/LeetCode.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/LeetCode.csproj",
+        "projectName": "LeetCode",
+        "projectPath": "/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/LeetCode.csproj",
+        "packagesPath": "/home/leo/.nuget/packages/",
+        "outputPath": "/home/leo/coding/Algorithms/c-sharp/Algorithms/LeetCode/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/leo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/leo/.dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

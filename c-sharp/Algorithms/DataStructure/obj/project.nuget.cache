@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9a30Z+fBncZI0CWrxPlkmxIBZWPB8IXYLLx1alLJX07EsVbEd2G5X4vVOj1OOeEF1Q/xDr3NpnWWA98qXE1hGA==",
+  "dgSpecHash": "Zwt/UgGJEgQwbXsX+L0Nq7ZvZ4Frad6yIoLhGNhm5bYeBgHEz8riTmP58qy+18JRv1sGKcgDVz6QcYhEmIW9/g==",
   "success": true,
-  "projectFilePath": "D:\\dev\\Algorithms\\c-sharp\\Algorithms\\DataStructure\\DataStructure.csproj",
+  "projectFilePath": "/home/leo/coding/Algorithms/c-sharp/Algorithms/DataStructure/DataStructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
