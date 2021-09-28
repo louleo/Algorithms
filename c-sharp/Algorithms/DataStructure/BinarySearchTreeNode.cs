@@ -1,45 +1,51 @@
+using System.Collections;
+using System.Collections.Generic;
 using System.Net.Http.Headers;
 
 namespace DataStructure
 {
-    public class BinarySearchTreeNode<T>: BinaryTreeNode<T>
+    public class BinarySearchTreeNode: BinaryTreeNode<int>
     {
-        public override BinarySearchTreeNode<T>? Right { get; set; }
+        public BinarySearchTreeNode Right { get; set; }
 
-        public override BinarySearchTreeNode<T>? Left { get; set; }
+        public BinarySearchTreeNode Left { get; set; }
         
-        public override BinarySearchTreeNode<T>? Parent { get; set; }
+        public BinarySearchTreeNode Parent { get; set; }
 
+        public bool IsRoot => Parent is null;
+        public BinarySearchTreeNode(int value):base(value)
+        {
+        }
 
-        public void InsertNode(T value)
+        public void InsertNode(int value)
         {
             if (value > Value)
             {
                 if (Right is null)
                 {
-                    Right = new BinarySearchTreeNode<T>(value);
+                    Right = new BinarySearchTreeNode(value);
                     Right.Parent = this;
                 }
                 else
                 {
-                    Right.InsertNode(T);
+                    Right.InsertNode(value);
                 }
             }
             else
             {
                 if (Left is null)
                 {
-                    Left = new BinarySearchTreeNode<T>(value);
+                    Left = new BinarySearchTreeNode(value);
                     Left.Parent = this;
                 }
                 else
                 {
-                    Left.InsertNode(T);
+                    Left.InsertNode(value);
                 }
             }
         }
 
-        public BinarySearchTree<T>? SearchNode(T value)
+        public BinarySearchTreeNode SearchNode(int value)
         {
             if (value == Value)
             {
@@ -52,6 +58,23 @@ namespace DataStructure
             {
                 return Left?.SearchNode(value);
             }
+        }
+
+        public bool IsLeft()
+        {
+            return Parent?.Left?.Value == Value;
+        }
+
+        public bool IsRight()
+        {
+            return Parent?.Right?.Value == Value;
+        }
+
+        public void WriteToList(IList<int> results)
+        {
+            Left?.WriteToList(results);
+            results.Add(Value);
+            Right?.WriteToList(results);
         }
     }
 }
