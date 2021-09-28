@@ -44,7 +44,6 @@ namespace Algorithms.RateLimiter
                 }
                 else
                 {
-                    _cache.TryUpdate(ClientID, numberOfRequests);
                     return true;
                 }
             }
