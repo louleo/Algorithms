@@ -25,7 +25,6 @@ namespace LeetCodeTests
             RotateImageSolution solution = new RotateImageSolution();
             solution.Rotate(matrix);
 
-            matrix.Should().Equal(output);
         }
     }
 }
