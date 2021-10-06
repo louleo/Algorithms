@@ -18,5 +18,7 @@
     &lt;TestId&gt;xUnit::ADCDB260-DC02-4B33-B954-24348B90D570::net5.0::DataStructureTests.RateLimiterTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::ADCDB260-DC02-4B33-B954-24348B90D570::net5.0::DataStructureTests.BinarySearchTreeTests.Test_BinarySearchTree_Deletion&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.LRUCacheTests.LCRCacheTestCase1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.RotateImageTests.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.LongestPalindromicSubstringTests.Test1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
