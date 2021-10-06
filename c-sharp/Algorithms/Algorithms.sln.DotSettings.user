@@ -24,5 +24,6 @@
     &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.JumpGameTests.TestCase1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.JumpGameTests.TestCase2&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.LongestSubstringWithoutRepeatingCharactersTests.TestCase1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.BinarySearchTests.TestCase1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
