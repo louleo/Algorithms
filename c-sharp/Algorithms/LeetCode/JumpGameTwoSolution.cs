@@ -1,3 +1,5 @@
+using System;
+
 namespace LeetCode
 {
     public class JumpGameTwoSolution
@@ -9,28 +11,22 @@ namespace LeetCode
 
         private int Solution1(int[] nums)
         {
-            int currentIndex = 0;
-            int maxJumpStep = nums[currentIndex];
-            int stepNum = 0;
+            int end = 0;
+            int maxPosition = 0;
+            int steps = 0;
+            int length = nums.Length;
 
-            while (maxJumpStep + currentIndex < nums.Length -1)
+            for (int i = 0; i < length - 1; i++)
             {
-                int maxIndex = currentIndex+maxJumpStep;
-                for (int i = maxJumpStep; i > 0; i--)
+                maxPosition = Math.Max(maxPosition, i + nums[i]);
+                if (i == end)
                 {
-                    if (nums[currentIndex+i] > nums[maxIndex])
-                    {
-                        maxIndex = currentIndex + i;
-                    }
+                    end = maxPosition;
+                    steps++;
                 }
-
-                currentIndex = maxIndex;
-                maxJumpStep = nums[currentIndex];
-                stepNum++;
             }
 
-            return stepNum + 1;
-
+            return steps;
         }
     }
 }

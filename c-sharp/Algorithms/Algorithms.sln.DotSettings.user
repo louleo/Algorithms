@@ -20,5 +20,8 @@
     &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.LRUCacheTests.LCRCacheTestCase1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.RotateImageTests.Test1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.LongestPalindromicSubstringTests.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.OnlineElectionTests.TestCase1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.JumpGameTests.TestCase1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1338438C-1E54-4F13-8210-6591DE408993::net5.0::LeetCodeTests.JumpGameTests.TestCase2&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
