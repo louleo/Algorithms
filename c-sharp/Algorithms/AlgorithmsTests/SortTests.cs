@@ -22,8 +22,91 @@ namespace AlgorithmsTests
             BubbleSortHelper.Sort(arr1);
             
             //Assert 
-            CompareArraysWithOrder(arr1, arr2).Should().BeTrue();
+            arr1.Should().Equal(arr2);
+        }          
+        
+        [Theory]
+        [MemberData(nameof(TestingData))]
+        public void BubbleSort_Helper_return_correct_array(int[] arr1)
+        {
+            //Arrange
+            int[] arr2 = new int[arr1.Length];
+            arr1.CopyTo(arr2, 0);
+            Array.Sort(arr2);
+            
+            //Act
+            SortingHelper.BubbleSort(arr1);
+            
+            //Assert 
+            arr1.Should().Equal(arr2);
         }        
+        
+        [Theory]
+        [MemberData(nameof(TestingData))]
+        public void SelectionSort_Helper_return_correct_array(int[] arr1)
+        {
+            //Arrange
+            int[] arr2 = new int[arr1.Length];
+            arr1.CopyTo(arr2, 0);
+            Array.Sort(arr2);
+            
+            //Act
+            SortingHelper.SelectionSort(arr1);
+            
+            //Assert 
+            arr1.Should().Equal(arr2);
+        }     
+        
+        
+        [Theory]
+        [MemberData(nameof(TestingData))]
+        public void InsertSort_Helper_return_correct_array(int[] arr1)
+        {
+            //Arrange
+            int[] arr2 = new int[arr1.Length];
+            arr1.CopyTo(arr2, 0);
+            Array.Sort(arr2);
+            
+            //Act
+            SortingHelper.InsertionSort(arr1);
+            
+            //Assert 
+            arr1.Should().Equal(arr2);
+        }     
+        
+        
+        [Theory]
+        [MemberData(nameof(TestingData))]
+        public void QuickSort_Helper_return_correct_array(int[] arr1)
+        {
+            //Arrange
+            int[] arr2 = new int[arr1.Length];
+            arr1.CopyTo(arr2, 0);
+            Array.Sort(arr2);
+            
+            //Act
+            SortingHelper.QuickSort(arr1, 0, arr1.Length -1);
+            
+            //Assert 
+            arr1.Should().Equal(arr2);
+        }     
+        
+        
+        [Theory]
+        [MemberData(nameof(TestingData))]
+        public void MergeSort_Helper_return_correct_array(int[] arr1)
+        {
+            //Arrange
+            int[] arr2 = new int[arr1.Length];
+            arr1.CopyTo(arr2, 0);
+            Array.Sort(arr2);
+            
+            //Act
+            SortingHelper.MergeSort(arr1,0, arr1.Length -1);
+            
+            //Assert 
+            arr1.Should().Equal(arr2);
+        }     
         
         [Theory]
         [MemberData(nameof(TestingData))]
@@ -38,7 +121,7 @@ namespace AlgorithmsTests
             SelectionSortHelper.Sort(arr1);
             
             //Assert 
-            CompareArraysWithOrder(arr1, arr2).Should().BeTrue();
+            arr1.Should().Equal(arr2);
         }
 
         [Theory]
@@ -54,27 +137,11 @@ namespace AlgorithmsTests
             InsertionSortHelper.Sort(arr1);
             
             //Assert 
-            CompareArraysWithOrder(arr1, arr2).Should().BeTrue();
+            arr1.Should().Equal(arr2);
         }
 
 
-        private bool CompareArraysWithOrder(int[] arr1, int[] arr2)
-        {
-            if (arr1.Length != arr2.Length)
-            {
-                return false;
-            }
 
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                if (arr1[i] != arr2[i])
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
 
         public static IEnumerable<object[]> TestingData => new List<object[]>
         {

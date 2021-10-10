@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Algorithms.RateLimiter;
 using FluentAssertions;
@@ -29,28 +30,31 @@ namespace AlgorithmsTests
             //Assert
             result.Should().BeTrue();
         }
-
+        
         [Fact]
-        public void RateLimiter_should_return_false_when_requests_number_exceeds_limitation()
+        public void TokenRateLimiter_should_return_true_when_requests_number_not_exceeds_limitation()
         {
             //Arrange
-            SlidingWindowRateLimiter rateLimiter = new SlidingWindowRateLimiter(new TimeSpan(0,0,1), 10);
             int clientID = 1;
-            int clientID2 = 2;
-            List<bool> results1 = new List<bool>();
-            List<bool> results2 = new List<bool>();
-            
-            for (int i = 0; i < 12; i++)
+
+            int times = 0;
+            DateTime startTime = DateTime.Now;
+            DateTime currentTime = DateTime.Now;
+            IRateLimiter rateLimiter = new TokenBucketRateLimiter(10, 10);
+            List<bool> resultSet = new List<bool>();
+
+            while (currentTime - startTime < TimeSpan.FromSeconds(10))
             {
-                results2.Append(rateLimiter.IsAllow(clientID));
+  
+                resultSet.Add(rateLimiter.IsAllow(clientID));
+
+                currentTime = DateTime.Now;
+                Thread.Sleep(500);
             }
-            
 
-            //Act
-            var result = rateLimiter.IsAllow(clientID);
-
-            //Assert
-            result.Should().BeFalse();
+            resultSet.Should().NotBeEmpty();
         }
+
+        
     }
 }

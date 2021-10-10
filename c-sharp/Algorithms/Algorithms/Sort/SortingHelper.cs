@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Algorithms.Sort
 {
     public static class SortingHelper
@@ -28,17 +30,18 @@ namespace Algorithms.Sort
                 return;
             }
 
-            for (int i = 0; i < arr.Length; i++)
+            int temp = 0;
+            for (int i = 1; i < arr.Length; i++)
             {
-                int key = arr[i];
+                temp = arr[i];
                 int j = i - 1;
-                while (j > 0 && arr[j] > key)
+                while (j >= 0 && arr[j] > temp)
                 {
-                    (arr[j], arr[j + 1]) = (arr[j + 1], arr[j]);
+                    arr[j + 1] = arr[j];
                     j--;
                 }
 
-                arr[j + 1] = key;
+                arr[j + 1] = temp;
             }
         }
 
@@ -46,7 +49,7 @@ namespace Algorithms.Sort
         {
             if (left < right)
             {
-                int mid = left + (right / 2);
+                int mid = (left + right) / 2;
                 MergeSort(arr, left, mid);
                 MergeSort(arr, mid+1, right);
                 Merge(arr, left, mid, right);
@@ -69,36 +72,33 @@ namespace Algorithms.Sort
 
         private static void Merge(int[] arr, int left, int mid, int right)
         {
-            int leftArrLength = mid - left + 1;
-            int rightArrLength = right - mid;
-
-            int[] leftArr = new int[leftArrLength];
-            int[] rightArr = new int[rightArrLength];
+            List<int> leftList = new List<int>();
+            List<int> rightList = new List<int>();
             int i, j;
-            for (i = 0; i < leftArrLength; i++)
+            for (i = left; i <= mid; i++)
             {
-                leftArr[i] = arr[left + i];
+                leftList.Add(arr[i]);
             }
 
-            for (j = 0; j < rightArrLength; j++)
+            for (j = mid + 1; j <= right; j++)
             {
-                rightArr[j] = arr[mid + j + 1];
+                rightList.Add(arr[j]);
             }
 
             i = 0;
             j = 0;
             int k = left;
 
-            while (i < leftArrLength && j < rightArrLength)
+            while (i < leftList.Count && j < rightList.Count)
             {
-                if (leftArr[i] < rightArr[j])
+                if (leftList[i] < rightList[j])
                 {
-                    arr[k] = leftArr[i];
+                    arr[k] = leftList[i];
                     i++;
                 }
                 else
                 {
-                    arr[k] = rightArr[j];
+                    arr[k] = rightList[j];
                     j++;
                 }
 
@@ -106,16 +106,16 @@ namespace Algorithms.Sort
             }
 
 
-            while (i < leftArrLength)
+            while (i < leftList.Count)
             {
-                arr[k] = leftArr[i];
+                arr[k] = leftList[i];
                 i++;
                 k++;
             }
 
-            while (j < rightArrLength)
+            while (j < rightList.Count)
             {
-                arr[k] = rightArr[j];
+                arr[k] = rightList[j];
                 k++;
                 j++;
             }
@@ -128,23 +128,23 @@ namespace Algorithms.Sort
                 int pivotIndex = right;
                 int pivot = arr[pivotIndex];
 
-                int k = left - 1;
-                
-                for (int i = left; i < pivotIndex; i++)
+                int startIndex = left - 1;
+                for (int i = left; i < right; i++)
                 {
                     if (arr[i] < pivot)
                     {
-                        k++;
-                        (arr[k], arr[i]) = (arr[i], arr[k]);
-                    }
+                        startIndex += 1;
+                        (arr[startIndex], arr[i]) = (arr[i], arr[startIndex]);
+                    }   
                 }
 
-                (arr[k + 1], arr[pivotIndex]) = (arr[pivotIndex], arr[k + 1]);
-
-                pivotIndex = k + 1;
-                QuickSort(arr, left, pivotIndex-1);
-                QuickSort(arr, pivotIndex+1, right);
+                startIndex += 1;
+                (arr[startIndex], arr[pivotIndex]) = (arr[pivotIndex], arr[startIndex]);
+                pivotIndex = startIndex;
+                QuickSort(arr, left, pivotIndex - 1);
+                QuickSort(arr, pivotIndex+ 1, right);
             }
+            
         } 
         
         
