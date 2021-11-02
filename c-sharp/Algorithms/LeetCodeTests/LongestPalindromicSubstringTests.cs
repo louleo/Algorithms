@@ -10,14 +10,15 @@ namespace LeetCodeTests
         public void Test1()
         {
             //Arrange
-            string strInput = "babad";
-            string expectedOutput = "bab";
+            string strInput = "ababad";
+            string expectedOutput = "ababa";
             LongestPalindromicSubstringSolution solution = new LongestPalindromicSubstringSolution();
             
             //Act
             string result = solution.LongestPalindrome(strInput);
             
             //Assert
+            result.Should().Be(expectedOutput);
         }
     }
 }
