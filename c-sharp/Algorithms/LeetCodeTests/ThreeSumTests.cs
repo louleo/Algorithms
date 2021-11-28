@@ -22,7 +22,7 @@ namespace LeetCodeTests
             };
             var sol = new ThreeSumSolution();
 
-            sol.ThreeSum(nums).Should().BeSameAs(result);
+            sol.ThreeSum(nums).Should().BeEquivalentTo(result);
         }
         
         [Fact]
