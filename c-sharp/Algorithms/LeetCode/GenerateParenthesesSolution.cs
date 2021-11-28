@@ -15,9 +15,21 @@ namespace LeetCode
     */
     public class GenerateParenthesesSolution
     {
+        private Dictionary<int, IList<string>> _cache;
+
+        public GenerateParenthesesSolution()
+        {
+            _cache = new Dictionary<int, IList<string>>();
+        }
         public IList<string> GenerateParenthesis(int n)
         {
             HashSet<string> results = new HashSet<string>();
+            IList<string> value;
+            if (_cache.TryGetValue(n, out value))
+            {
+                return value;
+            }
+            
             if (n == 1)
             {
                 results.Add("()");
@@ -49,8 +61,11 @@ namespace LeetCode
                 }
             }
 
-            return results.ToList();
+            value = results.ToList();
+            _cache.TryAdd(n, value);
+            return value;
         }
+        
     }
 }
 
