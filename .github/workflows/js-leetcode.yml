@@ -1,0 +1,28 @@
+name: JS-LEETCODE
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./javascripts/leetcode
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node and NPM
+      uses: actions/setup-node@v2.5.0
+      with:
+        node-version: 16.13.1
+    - name: Restore dependencies
+      run: npm install
+      working-directory: ${{env.working-directory}}
+    - name: Test
+      run: npm run test
+      working-directory: ${{env.working-directory}}
+    - name: Restore dependencies
