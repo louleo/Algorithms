@@ -63,3 +63,5 @@ class LRUCache {
         node.next.prev = node;
     }
 }
+
+export default LRUCache;
