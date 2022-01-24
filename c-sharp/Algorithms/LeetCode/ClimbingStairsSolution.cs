@@ -3,7 +3,9 @@ using System.Security.Principal;
 
 namespace LeetCode
 {
-    public class ClimbingStairsSolution
+    namespace ClimbingStair
+    {
+            public class ClimbingStairsSolution
     {
         private IList<TreeNode> _nodeList;
         private TreeNode _root;
@@ -128,6 +130,8 @@ namespace LeetCode
             this.Parent = parent;
         }
     }
+    }
+
 }
 
 /*
