@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 
 namespace LeetCode
@@ -9,21 +10,27 @@ namespace LeetCode
         {
             IList<IList<int>> results = new List<IList<int>>();
 
-            results.Add(nums.ToList());
+            IList<int> list = nums.ToList();
             
-            InternalPermutation(nums,results, 0);
+            BackTrace(list, list.Count, 0, results);
 
             return results;
         }
 
-        public void InternalPermutation(int[] nums, IList<IList<int>> results, int startIndex)
+        public void BackTrace(IList<int> nums, int end, int first, IList<IList<int>> result)
         {
-            for (int i = startIndex +1; i < nums.Length; i++)
+            if (end == first)
             {
-                (nums[startIndex], nums[i]) = (nums[i], nums[startIndex]);
-                results.Add(nums.ToList());
-                InternalPermutation(nums, results, i);
-                (nums[startIndex], nums[i]) = (nums[i], nums[startIndex]);
+                int[] newNums = new int[end];
+                nums.CopyTo(newNums, 0);
+                result.Add(newNums.ToList());
+            }
+
+            for (int i = first; i < end; i++)
+            {
+                (nums[i], nums[first]) = (nums[first], nums[i]);
+                BackTrace(nums, end, first+1, result);
+                (nums[i], nums[first]) = (nums[first], nums[i]);
             }
         }
     }

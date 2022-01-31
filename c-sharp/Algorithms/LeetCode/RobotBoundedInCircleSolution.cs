@@ -6,25 +6,50 @@ namespace LeetCode
     {
         public bool IsRobotBounded(string instructions)
         {
-            
-            Dictionary<char, int> dict = new Dictionary<char, int>();
-            dict['L'] = 0;
-            dict['R'] = 0;
-            
-            foreach (var c in instructions)
+            /*
+             * two conditions that robot bounded
+             * 1. not at the origin location
+             * 2. no the same direction as the original when not at the original location
+             */
+            int[][] directions = new[]
             {
-                int count;
-                if (dict.TryGetValue(c, out count))
+                new[] {0, 1}, //N
+                new[] {1, 0}, //E
+                new[] {0, -1}, //S
+                new[] {-1, 0} //W
+            };
+
+
+            int currentDirectionIndex = 0;
+            int[] currentLocation = new[] {0, 0};
+            foreach (var ins in instructions)
+            {
+                switch (ins)
                 {
-                    dict[c] += 1;
-                }
-                else
-                {
-                    dict.Add(c,1);
+                    case 'L':
+                        currentDirectionIndex -= 1;
+                        if (currentDirectionIndex < 0)
+                        {
+                            currentDirectionIndex += 4;
+                        }
+                        break;
+                    case 'R':
+                        currentDirectionIndex += 1;
+                        if (currentDirectionIndex >= 4)
+                        {
+                            currentDirectionIndex -= 4;
+                        }
+                        break;
+                    case 'G':
+                        currentLocation[0] += directions[currentDirectionIndex][0];
+                        currentLocation[1] += directions[currentDirectionIndex][1];
+                        break;
                 }
             }
 
-            return dict['L'] != dict['R'];
+            return (currentLocation[0] == 0 && currentLocation[1] == 0) || (currentDirectionIndex != 0);
+
+
         }
     }
 }

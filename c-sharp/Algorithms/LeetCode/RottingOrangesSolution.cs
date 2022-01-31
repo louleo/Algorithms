@@ -4,7 +4,6 @@ namespace LeetCode
 {
     public class RottingOrangesSolution
     {
-        
         public int OrangesRotting(int[][] grid)
         {
 
