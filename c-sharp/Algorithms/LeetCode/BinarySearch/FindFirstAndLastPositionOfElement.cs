@@ -9,39 +9,38 @@ namespace LeetCode.BinarySearch
             {
                 return new[] {-1, -1};
             }
-   
-                int left = index - 1;
-                int right = index + 1;
-                while (left >= 0)
-                {
-                    if (nums[left] == target)
-                    {
-                        left--;
-                    }
-                }
 
-                while (right < nums.Length)
+            int left = index - 1;
+            int right = index + 1;
+            while (left >= 0)
+            {
+                if (nums[left] == target)
                 {
-                    if (nums[right] == target)
-                    {
-                        right++;
-                    }
+                    left--;
                 }
+            }
 
-                return new[] {left + 1, right - 1};
-            
+            while (right < nums.Length)
+            {
+                if (nums[right] == target)
+                {
+                    right++;
+                }
+            }
+
+            return new[] {left + 1, right - 1};
         }
 
         public int BinarySearch(int left, int right, int[] nums, int target)
         {
             if (left <= right)
             {
-                int mid = left + ((right -left) / 2);
+                int mid = left + ((right - left) / 2);
                 if (nums[mid] == target)
                 {
                     return mid;
                 }
-                else if(nums[mid] > target)
+                else if (nums[mid] > target)
                 {
                     right = mid - 1;
                 }

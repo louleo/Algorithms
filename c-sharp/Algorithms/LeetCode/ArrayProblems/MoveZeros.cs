@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace LeetCode.Arrays
+namespace LeetCode.ArrayProblems
 {
     public class MoveZeros
     {

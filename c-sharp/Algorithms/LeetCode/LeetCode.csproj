@@ -6,13 +6,14 @@
 
     <ItemGroup>
       <Folder Include="BinarySearchTree" />
-      <Folder Include="DepthFirst" />
       <Folder Include="DoublyLinkedLists" />
       <Folder Include="Greedy" />
       <Folder Include="Heaps" />
       <Folder Include="Queues" />
       <Folder Include="Regressions" />
       <Folder Include="SlidingWindows" />
+      <Folder Include="StringProblems" />
+      <Folder Include="Unclassified" />
       <Folder Include="WidthFirst" />
     </ItemGroup>
 

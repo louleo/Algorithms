@@ -1,6 +1,6 @@
 using System;
 
-namespace LeetCode.Arrays
+namespace LeetCode.ArrayProblems
 {
     public class MaximumProductSubarray
     {

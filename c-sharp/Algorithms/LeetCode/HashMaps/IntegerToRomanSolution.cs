@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.HashMap
+namespace LeetCode.HashMaps
 {
     public class IntegerToRomanSolution
     {

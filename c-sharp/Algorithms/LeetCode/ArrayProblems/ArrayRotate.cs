@@ -1,4 +1,4 @@
-namespace LeetCode.Arrays
+namespace LeetCode.ArrayProblems
 {
     public class ArrayRotate
     {
